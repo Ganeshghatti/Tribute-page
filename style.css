@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+
+body {
+  background-color: white;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+  margin-top: 5vh;
+  width: 98vw;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+  gap: 0.5rem;
+}
+#img-div {
+  width: 96vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 0 3px 5px #888888;
+  justify-content: center;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vw 20vw 0 20vw;
+}
+#img-caption {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  position: relative;
+  bottom: 4vh;
+}
+a {
+  display: none;
+}
+
+#tribute-title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 150%;
+  padding: 0 10vw;
+}
+
+li {
+  padding: 1rem 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#title {
+  font-family: "Roboto Slab", serif;
+  font-size: clamp(2rem, 2.5vw, 4rem);
+}
+#caption {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
+}
+img {
+  display: block;
+}
+#image {
+  max-width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 1000px) {
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vw 10vw 0 10vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  main {
+    margin-top: 0;
+  }
+  #img-div {
+    height: 35vh;
+  }
+  section {
+    padding: 8vw 0 0 0;
+  }
+  #img-caption {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  #img-caption {
+    bottom: 0;
+  }
+}
